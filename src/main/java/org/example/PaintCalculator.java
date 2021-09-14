@@ -33,9 +33,9 @@ public class PaintCalculator
         }
 
         double area = length * width;
-        int num_gallons = (int) (area / 350);
+        int num_gallons = (int) (area / one_gallon);
 
-        int leftover_area = (int) (area % 350);
+        int leftover_area = (int) (area % one_gallon);
         if (leftover_area > 0)
             num_gallons++;
 
